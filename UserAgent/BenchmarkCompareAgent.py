@@ -7,7 +7,7 @@ from typing import Any, Dict, List
 
 class BenchmarkCompareAgent:
     def __init__(self, data_dir: str = None):
-        self.dsn = "postgresql://usr_agent_log:Kpmg1234!%40@3.229.104.119:5432/agent_log_db"
+        self.dsn = "postgresql://usr_agent_log:kpmg@1.1.1.1:5432/agent_log_db"
         self.data_dir = data_dir or r'd:\GitHub\text2sql-generative-ai-agent-new\final\UserAgent\Interim_result'
 
     def _get_db_conn(self):
