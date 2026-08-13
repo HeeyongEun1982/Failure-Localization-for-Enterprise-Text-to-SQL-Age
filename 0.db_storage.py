@@ -32,7 +32,7 @@ def save_agent_io(
 
     # DSN is managed here (per your requirement).
     # @ in password must be URL encoded as %40
-    dsn = "postgresql://usr_agent_log:Kpmg1234!%40@3.229.104.119:5432/agent_log_db"
+    dsn = "postgresql://usr_agent_log:kpmg!%40@1.1.1.:5432/agent_log_db"
     
     print(f"[DB_LOG] Attempting to connect to {dsn.split('@')[-1]}...")
     conn = psycopg2.connect(dsn)
